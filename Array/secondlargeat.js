@@ -1,18 +1,20 @@
-let arr = [12, 45, 7, 33, 89, 21,98,89,99,991212,999999,999999 ,89, 55];
+let arr = [8,10,14,15,15,88,88,88,87,88,];
 
-let max = -Infinity;
-let secondMax = -Infinity;
+let max = arr[0];
+let secondMax = arr[1];
 
-for(let i = 1 ; i<arr.length ; i++){
+if(max < secondMax){
+
+    [max,secondMax] = [secondMax,max]
+}
+
+for(let i = 2 ; i<arr.length ; i++){
 
     if(max < arr[i]){
                 secondMax = max
         max=arr[i];
-    }
-
-    if(max>arr[i] && arr[i]>secondMax){
-        secondMax=arr[i]
-    }
+    }else if(arr[i] < max && arr[i] > secondMax)
+        secondMax = arr[i]
 }
 
 console.log(secondMax);
