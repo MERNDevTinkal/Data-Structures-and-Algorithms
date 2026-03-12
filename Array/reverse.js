@@ -1,4 +1,4 @@
-let arr = [1,11,2,22,3,33,4,44,5,55,6,66,777];
+let arr = ["mango", "aam", "guava", "lichi"];
 
 let i = 0;
 let j = arr.length - 1;
@@ -11,5 +11,5 @@ while (i < j) {
     j--;
 }
 
-console.log(arr); // [777, 66, 6, 55, 5, 44, 4, 33, 3, 22, 2, 11, 1]
+console.log(`Reversed array is ${arr}`);
 console.log("hii");
