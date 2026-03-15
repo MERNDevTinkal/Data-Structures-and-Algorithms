@@ -1,84 +1,98 @@
+// // // // // // // // let arr = ["apple","banana","grape","orange"];
+
+// // // // // // // // arr = arr.slice(0,2);
+
+// // // // // // // // console.log(arr);
+
+// // // // // // // // let arr = ["apple","banana","grape","orange"];
+
+// // // // // // // // arr.unshift("mango",["kiwi","melon"]);
+
+// // // // // // // // console.log(arr);
+
 // // // // // // // let arr = ["apple","banana","grape","orange"];
 
 // // // // // // // arr = arr.slice(0,2);
 
 // // // // // // // console.log(arr);
 
-// // // // // // // let arr = ["apple","banana","grape","orange"];
+// // // // // // // 1. Print all elements of an array
 
-// // // // // // // arr.unshift("mango",["kiwi","melon"]);
+// // // // // // let numarray = [3,3,4,3,2,]
+// // // // // // numarray.forEach(function(item => item*2){
+// // // // // //     console.log(item)
+// // // // // // })
 
-// // // // // // // console.log(arr);
+// // // // // var myarr = [3,4,2,4,5,6,4]
+// // // // // let result =[]
 
-// // // // // // let arr = ["apple","banana","grape","orange"];
+// // // // // myarr.forEach(function(ele){
+// // // // //     result.push(ele*ele)
+// // // // // });
 
-// // // // // // arr = arr.slice(0,2);
+// // // // // console.log(result)
 
-// // // // // // console.log(arr);
+// // // // let users = [
+// // // //   { id: 1, name: "Rahul", age: 22 },
+// // // //   { id: 2, name: "Amit", age: 25 },
+// // // //   { id: 3, name: "Neha", age: 24 }
+// // // // ];
 
-// // // // // // 1. Print all elements of an array
+// // // // let username = [];
 
-// // // // // let numarray = [3,3,4,3,2,]
-// // // // // numarray.forEach(function(item => item*2){
-// // // // //     console.log(item)
-// // // // // })
-
-// // // // var myarr = [3,4,2,4,5,6,4]
-// // // // let result =[]
-
-// // // // myarr.forEach(function(ele){
-// // // //     result.push(ele*ele)
-// // // // });
-
-// // // // console.log(result)
+// // // // users.forEach(function(user,index,arr){
+// // // //     username.push(user.name)
+// // // // })
+// // // // console.log(username)
 
 // // // let users = [
 // // //   { id: 1, name: "Rahul", age: 22 },
 // // //   { id: 2, name: "Amit", age: 25 },
-// // //   { id: 3, name: "Neha", age: 24 }
+// // //   { id: 3, name: "Neha", age: 24 },
+// // //   { id: 4, name: "Riya", age: 21 }
 // // // ];
 
-// // // let username = [];
+// // // let newarr=[]
 
 // // // users.forEach(function(user,index,arr){
-// // //     username.push(user.name)
+// // //     if(user.age > 23){
+// // //             newarr.push(user)
+// // //     }
 // // // })
-// // // console.log(username)
+// // // console.log(newarr)
 
-// // let users = [
-// //   { id: 1, name: "Rahul", age: 22 },
-// //   { id: 2, name: "Amit", age: 25 },
-// //   { id: 3, name: "Neha", age: 24 },
-// //   { id: 4, name: "Riya", age: 21 }
+// // let orders = [
+// //   { id: 1, status: "completed" },
+// //   { id: 2, status: "pending" },
+// //   { id: 3, status: "completed" },
+// //   { id: 4, status: "cancelled" },
+// //   { id: 5, status: "completed" }
 // // ];
 
-// // let newarr=[]
+// // let count = 0;
 
-// // users.forEach(function(user,index,arr){
-// //     if(user.age > 23){
-// //             newarr.push(user)
+// // orders.forEach(function(ele,ind,arr){
+// //     if(ele.status === "completed" ){
+// //         count = count +1
 // //     }
 // // })
-// // console.log(newarr)
 
-// let orders = [
-//   { id: 1, status: "completed" },
-//   { id: 2, status: "pending" },
-//   { id: 3, status: "completed" },
-//   { id: 4, status: "cancelled" },
-//   { id: 5, status: "completed" }
+// // console.log(count)
+
+
+// let cart = [
+//   { product: "Laptop", price: 50000 },
+//   { product: "Mouse", price: 500 },
+//   { product: "Keyboard", price: 1500 }
 // ];
 
-// let count = 0;
+// let totalPrice = 0;
 
-// orders.forEach(function(ele,ind,arr){
-//     if(ele.status === "completed" ){
-//         count = count +1
-//     }
+// cart.forEach(function(item,ind){
+//     totalPrice = totalPrice + item.price
 // })
 
-// console.log(count)
-
+// console.log(totalPrice)
 
 let cart = [
   { product: "Laptop", price: 50000 },
@@ -86,10 +100,10 @@ let cart = [
   { product: "Keyboard", price: 1500 }
 ];
 
-let totalPrice = 0;
+let total=0;
 
-cart.forEach(function(item,ind){
-    totalPrice = totalPrice + item.price
-})
+cart.forEach( item => {
+    total = total + item.price
+} )
 
-console.log(totalPrice)
+console.log(total)
